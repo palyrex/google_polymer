@@ -26,7 +26,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // app.use('/users', users);
 
 app.get('/', function(req, res) {
-    res.sendFile(__dirname + '/public/my-element.html');
+    res.sendFile(__dirname + '/my-element.html');
 });
 
 // catch 404 and forward to error handler
