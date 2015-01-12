@@ -22,11 +22,14 @@ app.set('view engine', 'jade');
 // app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use('/bower_components',  express.static(__dirname + '/bower_components'))
+app.use('/elements',  express.static(__dirname + '/elements'))
+
 // app.use('/', routes);
 // app.use('/users', users);
 
 app.get('/', function(req, res) {
-    res.sendFile(__dirname + '/elements/my-element.html');
+    res.sendFile(__dirname + '/views/index.html');
 });
 
 // catch 404 and forward to error handler
