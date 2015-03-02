@@ -1,1 +1,15 @@
-playing aroung with google's polymer
+##Practising Google's Polymer
+
+To check it out run 
+
+```
+npm install
+```
+
+and then 
+
+```
+npm start
+```
+
+
